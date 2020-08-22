@@ -3,8 +3,9 @@
 JavaScript solutions to problems in the book Cracking the Coding Interview(6th Edition). 
 
 ## Table of Contents
-* **[Big O](#big-o)
+
 * **[Arrays and Strings](#arrays-and-strings)**
+    * Hash Tables, ArrayList & Resizale Array, StringBuilder
 * **[LinkedList](#linkedlist)**
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
@@ -17,20 +18,21 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Testing](#testing)**
 * **[Additional Review Problems](#additional-review-problems)**
 
-### Big O
-- ** **
-
 ### Arrays and Strings
 
-- [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
-- [Is Unique](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
-- [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
-- [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
-- [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
-- [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
-- [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
-- [Urlify](./src/chapter01ArraysAndStrings/Urlify.java) <br />
-- [Zero Matrix](./src/chapter01ArraysAndStrings/ZeroMatrix.java) <br />
+* Base Knowledge:
+
+* Solution
+
+  - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
+  - [Is Unique](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
+  - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
+  - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
+  - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
+  - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
+  - [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
+  - [Urlify](./src/chapter01ArraysAndStrings/Urlify.java) <br />
+  - [Zero Matrix](./src/chapter01ArraysAndStrings/ZeroMatrix.java) <br />
 
 ### LinkedList
 
