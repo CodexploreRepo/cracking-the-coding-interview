@@ -28,10 +28,16 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ### Solution
 - [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
   - **ASCII and Unicode**
-     - ASCII defines 128 characters, which map to the numbers 0–127. 
-     - Unicode defines (less than) 2^(21) characters, which, similarly, map to numbers 0–2^(21) (though not all numbers are currently assigned, and some are reserved).
-     - Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
-  - **UTF-32 and UTF-8**
+     - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
+     <br>
+     - Unicode:  consistent encoding, representation, and handling of text expressed in most of the world's writing systems: Japanese, Chinese, Vietnamese, etc.
+     - Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 (100 0001) means "Latin capital 'A'".
+     <br/>
+  - **UTF-8, UTF-16 & UTF-32**: ways of storing Unicode characters in byte sequences, such as UTF-32 and UTF-8.
+     - UTF-8 : minimum 8 bits (variable length encodings).
+     - UTF-16: minimum 16 bits (variable length encodings).
+     - UTF-32: minimum and maximum 32 bits.
+      
   - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
