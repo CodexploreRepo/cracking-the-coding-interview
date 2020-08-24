@@ -5,7 +5,9 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ## Table of Contents
 
 * **[Arrays and Strings](#arrays-and-strings)**
-    * Hash Tables, ArrayList & Resizale Array, StringBuilder
+    * Hash Tables
+    * ArrayList & Resizale Array
+    * StringBuilder
 * **[LinkedList](#linkedlist)**
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
