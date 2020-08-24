@@ -29,7 +29,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 - [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
   - **ASCII and Unicode**
      - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
-     <br>
+
      - Unicode:  consistent encoding, representation, and handling of text expressed in most of the world's writing systems: Japanese, Chinese, Vietnamese, etc.
      - Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 (100 0001) means "Latin capital 'A'".
      <br/>
