@@ -21,11 +21,14 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ### Arrays and Strings
 
 * Base Knowledge:
-
+  #### 1. Array List:
+  - **Array List** : offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
+  - **Array** : fixed length
+      
 * Solution
-
+  - [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
+     - Unique
   - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
-  - [Is Unique](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
