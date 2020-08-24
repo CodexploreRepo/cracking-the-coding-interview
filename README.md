@@ -20,14 +20,18 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 
 ### Arrays and Strings
 
-* Base Knowledge:
+### Base Knowledge:
   #### 1. Array List:
-  - **Array List** : offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
-  - **Array** : fixed length
+  - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
+  - **Array**: fixed length
       
-* Solution
-  - [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
-     - Unique
+### Solution
+- [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
+  - **ASCII and Unicode**
+     - ASCII defines 128 characters, which map to the numbers 0–127. 
+     - Unicode defines (less than) 2^(21) characters, which, similarly, map to numbers 0–2^(21) (though not all numbers are currently assigned, and some are reserved).
+     - Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 means "Latin capital 'A'".
+  - **UTF-32 and UTF-8**
   - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
