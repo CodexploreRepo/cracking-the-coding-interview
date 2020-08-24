@@ -29,7 +29,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
       
 ### Solution
 - [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java)
-  - **Hints**: using Hash Tables, Bit Vector ?
+  - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
   - **ASCII and Unicode**
      - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
 
