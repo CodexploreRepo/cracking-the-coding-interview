@@ -28,7 +28,8 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
   - **Array**: fixed length
       
 ### Solution
-- [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java) <br />
+- [**Is Unique**](./src/chapter01ArraysAndStrings/IsUnique.java)
+  - **Hints**: using Hash Tables, Bit Vector ?
   - **ASCII and Unicode**
      - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
 
@@ -40,7 +41,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      - UTF-16: minimum 16 bits (variable length encodings).
      - UTF-32: minimum and maximum 32 bits.
      
-  - **Hints**: using Hash Tables, Bit Vector ?
+
   
       
   - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
