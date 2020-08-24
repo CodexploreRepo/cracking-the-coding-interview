@@ -39,6 +39,9 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      - UTF-8 : minimum 8 bits (variable length encodings).
      - UTF-16: minimum 16 bits (variable length encodings).
      - UTF-32: minimum and maximum 32 bits.
+     
+  - **Hints**: using Hash Tables, Bit Vector ?
+  
       
   - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
