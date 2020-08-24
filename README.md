@@ -20,7 +20,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Testing](#testing)**
 * **[Additional Review Problems](#additional-review-problems)**
 
-### Arrays and Strings
+## Arrays and Strings
 
 ### Base Knowledge:
   #### 1. Array List:
@@ -34,7 +34,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 
      - Unicode:  consistent encoding, representation, and handling of text expressed in most of the world's writing systems: Japanese, Chinese, Vietnamese, etc.
      - Unicode is a superset of ASCII, and the numbers 0–127 have the same meaning in ASCII as they have in Unicode. For example, the number 65 (100 0001) means "Latin capital 'A'".
-     <br/>
+
   - **UTF-8, UTF-16 & UTF-32**: ways of storing Unicode characters in byte sequences, such as UTF-32 and UTF-8.
      - UTF-8 : minimum 8 bits (variable length encodings).
      - UTF-16: minimum 16 bits (variable length encodings).
