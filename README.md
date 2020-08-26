@@ -19,6 +19,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Sorting and Searching](#sorting-and-searching)**
 * **[Testing](#testing)**
 * **[Additional Review Problems](#additional-review-problems)**
+* **[Resources](#resources)**
 
 ## Arrays and Strings
 
@@ -43,7 +44,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
       
 - [**Check Permutation**](./chapter01/1_2_CheckPermutation.js): Given two strings, write a method to decide if one is a permutation of each other <br />
   - **Hints**
-     - Permutation means s1 = dog & s2=god are permutation of each other 
+     - Permutation means "dog" & "god" are permutation of each other 
      - Step 1: check if both have the same length or not
      - Step 2: Sort the strings to put two permutation in same order
 
@@ -140,3 +141,6 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ### Additional Review Problems (Moderate)
 
 ### Additional Review Problems (Hard)
+
+### Resources:
+- [Offical Solution](https://github.com/careercup/CtCI-6th-Edition-JavaScript/)
