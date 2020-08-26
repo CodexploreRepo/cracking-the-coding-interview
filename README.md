@@ -40,11 +40,13 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      - UTF-8 : minimum 8 bits (variable length encodings).
      - UTF-16: minimum 16 bits (variable length encodings).
      - UTF-32: minimum and maximum 32 bits.
-     
-
-  
       
-  - [Check Permutation](./src/chapter01ArraysAndStrings/CheckPermutation.java) <br />
+- [**Check Permutation**](./chapter01/1_2_CheckPermutation.js): Given two strings, write a method to decide if one is a permutation of each other <br />
+  - **Hints**
+     - Permutation means s1 = dog & s2=god are permutation of each other 
+     - Step 1: check if both have the same length or not
+     - Step 2: Sort the strings to put two permutation in same order
+
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
