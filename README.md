@@ -27,7 +27,26 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
   #### 1. Array List:
   - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
   - **Array**: fixed length
-      
+  #### JavaScript FAQ - Strings & Array:
+  - **String - How to sort a string**:
+   ```JavaScript
+    //need to .split("") the string to sort the array since JS dont have .sort() for string, only for array
+    //need to .join("") after sorted to compare to string since JS cannot compare 2 arrays
+    var sortedStringOne = stringOne.split("").sort().join("");
+   ```
+  - **String - How to modify element in existing string**:
+   ```JavaScript
+    //need to .split("") the string into the array as JS cannot directly change element via string index like this str[newLength - 1] = "0";
+    let strArr = str.split("");
+    
+    for (let i = oriLength - 1; i >= 0; i--) {
+       if (str[i] === " ") {
+         strArr[newLength - 1] = "0";
+       }
+    }
+    //need to .join("") to become a string from the array strArr
+    return strArr.join("");
+   ```
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js)
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
@@ -51,11 +70,11 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 `('Mr John Smith    ', 13) => 'Mr%20John%20Smith'`
   - **Hints**
      - A common approach in **string manipulation problems** is to edit the string *starting from the end and working backwards*
-     - For URLify, using 2-scan approach:
-     - First Scan: count the number of space between the actual string from index 0 to `oriLength -1` => Calculate the actual length of the string we need to increase to append "%20"
-     - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
-         - If seeing a space => replace with %20
-         - If original character => copi
+        - For URLify, using 2-scan approach:
+        - First Scan: count the number of space between the actual string from index 0 to `oriLength -1` => Calculate the actual length of the string we need to increase to append "%20"
+        - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
+            - If seeing a space => replace with %20
+            - If original character => copy
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
