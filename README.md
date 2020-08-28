@@ -29,7 +29,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
   - **Array**: fixed length
       
 ### Solution
-- [**Is Unique**](./chapter01/1_1_Is_Unique.js)
+- [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js)
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
   - **ASCII and Unicode**
      - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
@@ -42,18 +42,26 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      - UTF-16: minimum 16 bits (variable length encodings).
      - UTF-32: minimum and maximum 32 bits.
       
-- [**Check Permutation**](./chapter01/1_2_CheckPermutation.js): Given two strings, write a method to decide if one is a permutation of each other <br />
+- [**1.2. Check Permutation**](./chapter01/1_2_CheckPermutation.js): Given two strings, write a method to decide if one is a permutation of each other <br />
   - **Hints**
      - Permutation means "dog" & "god" are permutation of each other 
      - Step 1: check if both have the same length or not
      - Step 2: Sort the strings to put two permutation in same order
-
+- [**1.3. URLify**](./chapter01/1_3_urlify.js) <br /> Write a method to replace all spaces in a string with "%20". Given the true length (oriLength) of the string<br>
+`('Mr John Smith    ', 13) => 'Mr%20John%20Smith'`
+  - **Hints**
+     - A common approach in **string manipulation problems** is to edit the string *starting from the end and working backwards*
+     - For URLify, using 2-scan approach:
+     - First Scan: count the number of space between the actual string from index 0 to `oriLength -1` => Calculate the actual length of the string we need to increase to append "%20"
+     - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
+         - If seeing a space => replace with %20
+         - If original character => copi
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
   - [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
-  - [Urlify](./src/chapter01ArraysAndStrings/Urlify.java) <br />
+
   - [Zero Matrix](./src/chapter01ArraysAndStrings/ZeroMatrix.java) <br />
 
 ### LinkedList
