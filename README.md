@@ -36,7 +36,8 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
    ```
   - **String - How to modify element in existing string**:
    ```JavaScript
-    //need to .split("") the string into the array as JS cannot directly change element via string index like this str[newLength - 1] = "0";
+    //need to .split("") the string into the array as JS cannot directly change element 
+    //via string index like this str[newLength - 1] = "0";
     let strArr = str.split("");
     
     for (let i = oriLength - 1; i >= 0; i--) {
