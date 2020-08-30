@@ -49,7 +49,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     return strArr.join("");
    ```
 ### Solution
-- [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js)
+- [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
   - **ASCII and Unicode**
      - ASCII (7-bit) = 2^(7) defines 128 characters, which map to the numbers 0–127. 
