@@ -50,14 +50,14 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     }
    ```
 
-
+[(Back to top)](#table-of-contents)
 ## Arrays and Strings
 
 ### Base Knowledge:
   #### 1. Array List:
   - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
   - **Array**: fixed length
-
+[(Back to top)](#table-of-contents)
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
@@ -71,12 +71,13 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      - UTF-8 : minimum 8 bits (variable length encodings).
      - UTF-16: minimum 16 bits (variable length encodings).
      - UTF-32: minimum and maximum 32 bits.
-      
+[(Back to top)](#table-of-contents)     
 - [**1.2. Check Permutation**](./chapter01/1_2_CheckPermutation.js): Given two strings, write a method to decide if one is a permutation of each other <br />
   - **Hints**
      - Permutation means "dog" & "god" are permutation of each other 
      - Step 1: check if both have the same length or not
      - Step 2: Sort the strings to put two permutation in same order
+[(Back to top)](#table-of-contents)
 - [**1.3. URLify**](./chapter01/1_3_urlify.js) <br /> Write a method to replace all spaces in a string with "%20". Given the true length (oriLength) of the string<br>
 `('Mr John Smith    ', 13) => 'Mr%20John%20Smith'`
   - **Hints**
@@ -86,6 +87,8 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
         - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
             - If seeing a space => replace with %20
             - If original character => copy
+            
+[(Back to top)](#table-of-contents)
 - [**1.4. Palindrome Permutation**](./chapter01/1_4_palindromePermutation.js): Given a string, write a function to check if it is a permutation of a palindrome ?
 ```
 Input: Tact Cooa
@@ -98,7 +101,7 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
          - `{ t: 2, a: 1, c: 1} => False`, so for even-length string, if we have more than 1 char with odd count, it can't be a permutation of a palindrome also [1]
       - For string with Odd Length after removing non-letter characters must have exact 1 char with odd count [2], i.e: `{ t: 2, a: 2, c: 2, o: 5 } => True`
       - From [1], [2]: **permutation of a palindrome** *cannot have more than 1 char with odd count* 
-      
+[(Back to top)](#table-of-contents)     
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
   
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
@@ -106,6 +109,7 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
 
   - [Zero Matrix](./src/chapter01ArraysAndStrings/ZeroMatrix.java) <br />
+
 
 ### LinkedList
 
