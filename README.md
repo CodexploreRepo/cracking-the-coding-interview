@@ -3,7 +3,7 @@
 JavaScript solutions to problems in the book Cracking the Coding Interview(6th Edition). 
 
 ## Table of Contents
-
+* **[JavaScript FAQ](#javascript-faq)**
 * **[Arrays and Strings](#arrays-and-strings)**
     * Hash Tables
     * ArrayList & Resizale Array
@@ -21,20 +21,14 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Additional Review Problems](#additional-review-problems)**
 * **[Resources](#resources)**
 
-## Arrays and Strings
-
-### Base Knowledge:
-  #### 1. Array List:
-  - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
-  - **Array**: fixed length
-  #### JavaScript FAQ - Strings & Array:
-  - **String - How to sort a string**:
+## JavaScript FAQ:
+- **String - How to sort a string**:
    ```JavaScript
     //need to .split("") the string to sort the array since JS dont have .sort() for string, only for array
     //need to .join("") after sorted to compare to string since JS cannot compare 2 arrays
     var sortedStringOne = stringOne.split("").sort().join("");
    ```
-  - **String - How to modify element in existing string**:
+- **String - How to modify element in existing string**:
    ```JavaScript
     //need to .split("") the string into the array as JS cannot directly change element 
     //via string index like this str[newLength - 1] = "0";
@@ -48,13 +42,22 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     //need to .join("") to become a string from the array strArr
     return strArr.join("");
    ```
-   - **Object - How to loop through Keys & Values of Object**:
+- **Object - How to loop through Keys & Values of Object**: `Object.keys(obj_variable)`; `Object.values(obj_variable)`
    ```JavaScript
    Object.keys(char_obj).forEach((char) => {
     if (char_obj[char] % 2 > 0) {
       isPerm = false; // return in a forEach statment doesn't flow out of function scope
     }
    ```
+
+
+## Arrays and Strings
+
+### Base Knowledge:
+  #### 1. Array List:
+  - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
+  - **Array**: fixed length
+
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
