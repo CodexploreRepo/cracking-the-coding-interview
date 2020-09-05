@@ -48,6 +48,13 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     //need to .join("") to become a string from the array strArr
     return strArr.join("");
    ```
+   - **Object - How to loop through Keys & Values of Object**:
+   ```JavaScript
+   Object.keys(char_obj).forEach((char) => {
+    if (char_obj[char] % 2 > 0) {
+      isPerm = false; // return in a forEach statment doesn't flow out of function scope
+    }
+   ```
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
@@ -76,7 +83,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
         - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
             - If seeing a space => replace with %20
             - If original character => copy
-- [**1.3. Palindrome Permutation**](.): Given a string, write a function to check if it is a permutation of a palindrome ?
+- [**1.4. Palindrome Permutation**](./chapter01/1_4_palindromePermutation.js): Given a string, write a function to check if it is a permutation of a palindrome ?
 ```
 Input: Tact Cooa
 Ouput: True (Permutations: "taco cat", "atco cta", etc)
