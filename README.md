@@ -76,8 +76,21 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
         - Second Scan: Edit the string in reverse order, starting from `oriLength -1` to index 0
             - If seeing a space => replace with %20
             - If original character => copy
+- [**1.3. Palindrome Permutation**](.): Given a string, write a function to check if it is a permutation of a palindrome ?
+```
+Input: Tact Cooa
+Ouput: True (Permutations: "taco cat", "atco cta", etc)
+```
+  - **Permutation**: rearrangement of letters
+  - **Palindrome**: a word or phase that is the same towards and backwards. 
+  - **Hints**: To be more precise, a permutation of a palindrome would be 
+      - For string with Even Length after removing non-letter characters must have even counts of characters, i.e:  `{ t: 2, a: 2, c: 2} => True`
+         - `{ t: 2, a: 1, c: 1} => False`, so for even-length string, if we have more than 1 char with odd count, it can't be a permutation of a palindrome also [1]
+      - For string with Odd Length after removing non-letter characters must have exact 1 char with odd count [2], i.e: `{ t: 2, a: 2, c: 2, o: 5 } => False`
+      - From [1], [2]: **permutation of a palindrome** cannot have more than 1 char with odd count 
+      
   - [One Away](./src/chapter01ArraysAndStrings/OneAway.java) <br />
-  - [Palindrome Permutation](./src/chapter01ArraysAndStrings/PalindromePermutation.java) <br />
+  
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
   - [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
