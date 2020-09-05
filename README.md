@@ -21,7 +21,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Additional Review Problems](#additional-review-problems)**
 * **[Resources](#resources)**
 
-## JavaScript FAQ:
+## JavaScript FAQ
 - **String - How to sort a string**:
    ```JavaScript
     //need to .split("") the string to sort the array since JS dont have .sort() for string, only for array
