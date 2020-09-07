@@ -110,9 +110,9 @@ console.log(oneAway('pale', 'bale'), true);
 console.log(oneAway('pale', 'bake'), false)
  ```
   - **Hints**: Using 2-pointer approach: Compare each character of 2 strings & using `difference` variable to keep track if there is not more than 1 edit (or zero edits) away
-     - if difference => difference++ and check if (differnce > 1) return false; else:
-       - if s1 >< s2, move the pointer of the longer string to the next char; 
-       - if s1 == s2, move both pointers to next char
+     - if difference => difference++ and check `if (differnce > 1) return false; else`:
+       - if s1 !== s2, move the pointer of the longer string to the next char; 
+       - if s1 === s2, move both pointers to next char
      - if same => move both pointers
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
