@@ -65,9 +65,11 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
      ```JavaScript
      let compressedStr = [];
      while (i < strLength) {
+       //Using array to concat the string instead of String Concat, which costs O(n^2)
        compressedStr.push(str[i], "add");
        i++;
      }
+     //Convert back to string from array
      compressedStr = compressedStr.join("")
      ```
 ### Solution
@@ -115,18 +117,27 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
  
  - [**1.5. One Away**](./chapter01/1_5_One_Away.js) There are three types of edits that can be performed on strings: insert a character, remove a character and replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away. <br />
  
- ```JavaScript
-console.log(oneAway('pale', 'ple'), true);
-console.log(oneAway('pales', 'pale'), true);
-console.log(oneAway('pale', 'bale'), true);
-console.log(oneAway('pale', 'bake'), false)
- ```
+    ```JavaScript
+   //Examples:
+   console.log(oneAway('pale', 'ple'), true);
+   console.log(oneAway('pales', 'pale'), true);
+   console.log(oneAway('pale', 'bale'), true);
+   console.log(oneAway('pale', 'bake'), false)
+    ```
   - **Hints**: Using 2-pointer approach: Compare each character of 2 strings & using `difference` variable to keep track if there is not more than 1 edit (or zero edits) away
      - if difference => difference++ and check `if (differnce > 1) return false; else`:
        - if s1 !== s2, move the pointer of the longer string to the next char; 
        - if s1 === s2, move both pointers to next char
      - if same => move both pointers
-- [**1.6. String Compression**](./chapter01/1_6_String_Compression.js) 
+- [**1.6. String Compression**](./chapter01/1_6_String_Compression.js) Given a string, write a function to compress it by shortening every sequence of the same character to that character followed by the number of repetitions. If the compressed string is longer than the original, you should return the original string.
+    ```JavaScript
+    //Examples:
+    compress(“a”) = "a"
+    compress(“aaa”) = "a3"
+    compress(“aaabbb”) = "a3b3"
+    compress(“aaabccc”) = "a3b1c3"
+    ```
+  - **Hints**: Iterate through the string, copying characters to a new array, counting & appending the occurance into the new array. Join back the array to make compressed string after iteration.
 
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
