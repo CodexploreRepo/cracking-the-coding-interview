@@ -1,5 +1,5 @@
 const strComp = (str) => {
-  let compressedStr = "";
+  let compressedStr = [];
 
   let i = 0;
   let strLength = str.length;
@@ -9,14 +9,15 @@ const strComp = (str) => {
     currCount++;
     if (str[i] !== str[i + 1]) {
       //If the next char is diff, add current char + current count to compressedStr
-      compressedStr += str[i] + currCount;
+      //Using array to concat the string as String Concat costs O(n^2)
+      compressedStr.push(str[i], currCount);
       currCount = 0; //Reset the count of occurance
     }
     i++;
   }
   //if compressedStr.lenth > oriString.lenght => return oriString
   //else return compressedStr
-  return compressedStr.length > strLength ? str : compressedStr;
+  return compressedStr.length > strLength ? str : compressedStr.join("");
 };
 
 // Test
