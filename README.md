@@ -54,10 +54,15 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ## Arrays and Strings
 
 ### Base Knowledge:
-  #### 1. Array List:
+  #### 2. Array List:
   - **Array List**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1)
   - **Array**: fixed length
-
+  #### 3. StringBuilder:
+  - **Problem**: Concatenating a list of strings would take O(n^2)
+      - Why ? Assum we have a list of n strings with the same x length. On each concatenation, a new copy of string is created & 2 strings are copied over character by character. First concat --> requires to copy x chars. Second concat --> requires to copy 2x chars...
+      - Total time = O(x + 2x + 3x + ...+ n) = n(n+1)/2 = O(n^2)
+  - **Solution**: Using resizeable array to append all the strings & copy them back to a string only when necessary.
+  
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
