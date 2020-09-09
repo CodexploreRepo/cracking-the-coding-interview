@@ -62,7 +62,14 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
       - Why ? Assum we have a list of n strings with the same x length. On each concatenation, a new copy of string is created & 2 strings are copied over character by character. First concat --> requires to copy x chars. Second concat --> requires to copy 2x chars...
       - Total time = O(x + 2x + 3x + ...+ n) = n(n+1)/2 = O(n^2)
   - **Solution**: Using resizeable array to append all the strings & copy them back to a string only when necessary.
-  
+     ```JavaScript
+     let compressedStr = [];
+     while (i < strLength) {
+       compressedStr.push(str[i], "add");
+       i++;
+     }
+     compressedStr = compressedStr.join("")
+     ```
 ### Solution
 - [**1.1. Is Unique**](./chapter01/1_1_Is_Unique.js): Implement an Algorithm to determine if a string has all unique characters. 
   - **Hints**: using *Hash Tables* O(n); *Bit Vector* O(n) in time & O(1) in space as only take an Int (4-byte) extra memory 
@@ -119,6 +126,8 @@ console.log(oneAway('pale', 'bake'), false)
        - if s1 !== s2, move the pointer of the longer string to the next char; 
        - if s1 === s2, move both pointers to next char
      - if same => move both pointers
+- [**1.6. String Compression**](./chapter01/1_6_String_Compression.js) 
+
   - [Rotate Matrix](./src/chapter01ArraysAndStrings/RotateMatrix.java) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
   - [String Rotation](./src/chapter01ArraysAndStrings/StringRotation.java) <br />
