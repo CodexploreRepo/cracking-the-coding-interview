@@ -54,9 +54,15 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ## Arrays and Strings
 
 ### Base Knowledge:
+  | Data Structure   |      Pro      |  Cons |
+  |:----------:|-------------|------|
+  | Array | - Fast Lookup<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
   #### 2. Array List:
   - **Array List (Dynamic Array)**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1) like Array - JavaScript, List - Python 
   - **Array (Static Array)**: fixed length
+  
+
+  
   #### 3. StringBuilder:
   - **Problem**: Concatenating a list of strings would take O(n^2)
       - Why ? Assum we have a list of n strings with the same x length. On each concatenation, a new copy of string is created & 2 strings are copied over character by character. First concat --> requires to copy x chars. Second concat --> requires to copy 2x chars...
