@@ -4,6 +4,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 
 ## Table of Contents
 * **[JavaScript FAQ](#javascript-faq)**
+* **[Data Structure Summary](#data-structure-summary)**
 * **[Arrays and Strings](#arrays-and-strings)**
     * Hash Tables
     * ArrayList & Resizale Array
@@ -51,12 +52,16 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
    ```
 
 [(Back to top)](#table-of-contents)
-## Arrays and Strings
 
-### Base Knowledge:
+## Data Structure Summary
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
   | Array | - Fast Lookup<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
+
+[(Back to top)](#table-of-contents)
+## Arrays and Strings
+### Base Knowledge:
+ 
   #### 2. Array List:
   - **Array List (Dynamic Array)**: offers dynamic resizing, provides O(1) access, taking O(n) time to doubles when the arrayList is full, but happens rarely, so amortized doubling time still O(1) like Array - JavaScript, List - Python 
   - **Array (Static Array)**: fixed length
