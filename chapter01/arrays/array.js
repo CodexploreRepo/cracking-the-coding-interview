@@ -16,6 +16,7 @@ strings.unshift("x");
 //splice O(n): array.splice(start, deleteCount, items)
 // splice(2,0,'alien') means  at index 2, deleteCount = 0 => add, item = 'alien'
 strings.splice(2, 0, "alien");
+strings.splice(3, 1); // xóa 1 phần tử từ vị trí 
 
 console.log(strings);
 
