@@ -11,6 +11,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     * StringBuilder
 * **[LinkedList](#linkedlist)**
     * [The runner technique (or Second Pointer)](#the-runner-technique)
+    * [Recursive Problems](#recursive-problems)
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
 * **[Bit Manipulation](#bit-manipulation)**
@@ -140,6 +141,10 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - The runner technique (or Second Pointer): iterate through Linked List using 2 pointers simultaneousely, with one ahead of the other
   - In many linked list problems you need to know the position of a certain element or the overall length of the list. Given that you don’t always have the length of the list you are working on, the runner technique is an elegant way to solve these type of problems (and in some cases it’s the only solution)
   - You could have 1 pointer p1 (fast pointer) move every 2 elements for every 1 move that p2 makes. When p1 hits the end of Linked List, p2 will be at midpoint of linked list.
+  
+  #### Recursive Problems
+  - A number of linked list problems rely on recursion.
+  - Note: recursive algorithms take at least O(n) space , which n is the depth of recursive call.
  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
