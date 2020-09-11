@@ -27,7 +27,8 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ## Data Structure Summary
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
-  | [Array](./chapter01/arrays) | - Fast Lookup<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
+  | [Array](./chapter01/arrays) | - Fast Lookup O(1)<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
+  | [Linked List]()|-Fast Insert/Delete<br>Ordered<br>Flexible Size|-Slow Lookup<br>-More Memory due to storage of additional next and previous referencing elements.|
 
 [(Back to top)](#table-of-contents)
 ## Arrays and Strings
@@ -128,8 +129,9 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - [Zero Matrix](./src/chapter01ArraysAndStrings/ZeroMatrix.java) <br />
 
 
-### LinkedList
-
+## LinkedList
+### Base Knowledge:
+ 
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
 - [ListNode](./src/chapter02LinkedList/ListNode.java) <br />
