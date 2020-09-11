@@ -28,7 +28,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
   | [Array](./chapter01/arrays) | - Fast Lookup O(1)<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
-  | [Linked List]()|-Fast Insert/Delete<br>Ordered<br>Flexible Size|-Slow Lookup<br>-More Memory due to storage of additional next and previous referencing elements.|
+  | [Linked List]()|- Add/remove items from the beginning of the list in constant time<br>-Ordered<br>-Flexible Size|-Slow Lookup<br>-More Memory due to storage of additional next and previous referencing elements.|
 
 [(Back to top)](#table-of-contents)
 ## Arrays and Strings
@@ -131,6 +131,9 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
 
 ## LinkedList
 ### Base Knowledge:
+  #### Pros & Cons:
+  - Unlike an array, linked list not provide constant time access to particular "index" (i.e: to find Kth element in the list, you need to iterate through K elements
+  - **Benefits of LinkedList**: you can add/remove items from the beginning of the list in constant time
  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
