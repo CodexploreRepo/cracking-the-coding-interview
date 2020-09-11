@@ -133,6 +133,8 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
 
 ## LinkedList
 ### Base Knowledge:
+<img width="701" alt="Screenshot 2020-09-11 at 8 44 51 AM" src="https://user-images.githubusercontent.com/64508435/92833241-36d57d80-f40b-11ea-9275-6c77cace9554.png">
+
   #### Pros & Cons:
   - Unlike an array, linked list not provide constant time access to particular "index" (i.e: to find Kth element in the list, you need to iterate through K elements
   - **Benefits of LinkedList**: you can add/remove items from the beginning of the list in constant time
