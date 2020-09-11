@@ -139,12 +139,12 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - Unlike an array, linked list not provide constant time access to particular "index" (i.e: to find Kth element in the list, you need to iterate through K elements
   - **Benefits of LinkedList**: you can add/remove items from the beginning of the list in constant time
   
-  #### The Runner Technique
+  #### The Runner Technique:
   - The runner technique (or Second Pointer): iterate through Linked List using 2 pointers simultaneousely, with one ahead of the other
   - In many linked list problems you need to know the position of a certain element or the overall length of the list. Given that you don’t always have the length of the list you are working on, the runner technique is an elegant way to solve these type of problems (and in some cases it’s the only solution)
   - You could have 1 pointer p1 (fast pointer) move every 2 elements for every 1 move that p2 makes. When p1 hits the end of Linked List, p2 will be at midpoint of linked list.
   
-  #### Recursive Problems
+  #### Recursive Problems:
   - A number of linked list problems rely on recursion.
   - Note: recursive algorithms take at least O(n) space , which n is the depth of recursive call.
  
