@@ -10,7 +10,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     * ArrayList & Resizale Array
     * StringBuilder
 * **[LinkedList](#linkedlist)**
-    * [The runner technique (Or Second Pointer)](#the-runner-technique)
+    * [The runner technique (or Second Pointer)](#the-runner-technique)
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
 * **[Bit Manipulation](#bit-manipulation)**
@@ -29,7 +29,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
   | [Array](./chapter01/arrays) | - Fast Lookup O(1)<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
-  | [Linked List]()|- Add/remove items from the beginning of the list in constant time<br>-Ordered<br>-Flexible Size|-Slow Lookup<br>-More Memory due to storage of additional next and previous referencing elements.|
+  | [Linked List](./chapter02/linkedLists)|- Add/remove items from the beginning of the list in constant time<br>-Ordered<br>-Flexible Size|-Slow Lookup<br>-More Memory due to storage of additional next and previous referencing elements.|
 
 [(Back to top)](#table-of-contents)
 ## Arrays and Strings
@@ -137,6 +137,9 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - **Benefits of LinkedList**: you can add/remove items from the beginning of the list in constant time
   
   #### The Runner Technique
+  - The runner technique (or Second Pointer): iterate through Linked List using 2 pointers simultaneousely, with one ahead of the other
+  - In many linked list problems you need to know the position of a certain element or the overall length of the list. Given that you don’t always have the length of the list you are working on, the runner technique is an elegant way to solve these type of problems (and in some cases it’s the only solution)
+  - You could have 1 pointer p1 (fast pointer) move every 2 elements for every 1 move that p2 makes. When p1 hits the end of Linked List, p2 will be at midpoint of linked list.
  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
