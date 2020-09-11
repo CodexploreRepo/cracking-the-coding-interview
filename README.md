@@ -22,36 +22,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Additional Review Problems](#additional-review-problems)**
 * **[Resources](#resources)**
 
-## JavaScript FAQ
-- **String - How to sort a string**:
-   ```JavaScript
-    //need to .split("") the string to sort the array since JS dont have .sort() for string, only for array
-    //need to .join("") after sorted to compare to string since JS cannot compare 2 arrays
-    var sortedStringOne = stringOne.split("").sort().join("");
-   ```
-- **String - How to modify element in existing string**:
-   ```JavaScript
-    //need to .split("") the string into the array as JS cannot directly change element 
-    //via string index like this str[newLength - 1] = "0";
-    let strArr = str.split("");
-    
-    for (let i = oriLength - 1; i >= 0; i--) {
-       if (str[i] === " ") {
-         strArr[newLength - 1] = "0";
-       }
-    }
-    //need to .join("") to become a string from the array strArr
-    return strArr.join("");
-   ```
-- **Object - How to loop through Keys & Values of Object**: `Object.keys(obj_variable)`; `Object.values(obj_variable)`
-   ```JavaScript
-   Object.keys(char_obj).forEach((char) => {
-    if (char_obj[char] % 2 > 0) {
-      isPerm = false; // return in a forEach statment doesn't flow out of function scope
-    }
-   ```
 
-[(Back to top)](#table-of-contents)
 
 ## Data Structure Summary
   | Data Structure   |      Pro      |  Cons |
@@ -242,6 +213,37 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
 ### Additional Review Problems (Moderate)
 
 ### Additional Review Problems (Hard)
+
+## JavaScript FAQ
+- **String - How to sort a string**:
+   ```JavaScript
+    //need to .split("") the string to sort the array since JS dont have .sort() for string, only for array
+    //need to .join("") after sorted to compare to string since JS cannot compare 2 arrays
+    var sortedStringOne = stringOne.split("").sort().join("");
+   ```
+- **String - How to modify element in existing string**:
+   ```JavaScript
+    //need to .split("") the string into the array as JS cannot directly change element 
+    //via string index like this str[newLength - 1] = "0";
+    let strArr = str.split("");
+    
+    for (let i = oriLength - 1; i >= 0; i--) {
+       if (str[i] === " ") {
+         strArr[newLength - 1] = "0";
+       }
+    }
+    //need to .join("") to become a string from the array strArr
+    return strArr.join("");
+   ```
+- **Object - How to loop through Keys & Values of Object**: `Object.keys(obj_variable)`; `Object.values(obj_variable)`
+   ```JavaScript
+   Object.keys(char_obj).forEach((char) => {
+    if (char_obj[char] % 2 > 0) {
+      isPerm = false; // return in a forEach statment doesn't flow out of function scope
+    }
+   ```
+
+[(Back to top)](#table-of-contents)
 
 ### Resources:
 - [Offical Solution](https://github.com/careercup/CtCI-6th-Edition-JavaScript/)
