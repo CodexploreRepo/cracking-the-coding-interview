@@ -56,7 +56,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 ## Data Structure Summary
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
-  | [Array](#/chapter01/arrays) | - Fast Lookup<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
+  | [Array](./chapter01/arrays) | - Fast Lookup<br> - Fast Push/Pop<br> - Ordered|- Slow Insert/Delete <br> - Fixed Size|
 
 [(Back to top)](#table-of-contents)
 ## Arrays and Strings
