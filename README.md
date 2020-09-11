@@ -10,7 +10,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     * ArrayList & Resizale Array
     * StringBuilder
 * **[LinkedList](#linkedlist)**
-    * [The runner technique (Or Second Pointer)](#)the-runner-technique* 
+    * [The runner technique (Or Second Pointer)](#the-runner-technique)
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
 * **[Bit Manipulation](#bit-manipulation)**
