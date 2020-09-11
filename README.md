@@ -10,6 +10,7 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
     * ArrayList & Resizale Array
     * StringBuilder
 * **[LinkedList](#linkedlist)**
+    * [The runner technique (Or Second Pointer)](#)the-runner-technique* 
 * **[Stacks and Queues](#stacks-and-queues)**
 * **[Trees and Graphs](#trees-and-graphs)**
 * **[Bit Manipulation](#bit-manipulation)**
@@ -134,6 +135,8 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   #### Pros & Cons:
   - Unlike an array, linked list not provide constant time access to particular "index" (i.e: to find Kth element in the list, you need to iterate through K elements
   - **Benefits of LinkedList**: you can add/remove items from the beginning of the list in constant time
+  
+  #### The Runner Technique
  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
