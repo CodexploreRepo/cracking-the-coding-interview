@@ -125,7 +125,7 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - **Hints**: Iterate through the string, copying characters to a new array, counting & appending the occurance into the new array. Join back the array to make compressed string after iteration.
 
 - [**1.7. Rotate Matrix**](./chapter01/1_7_rotateMatrix.js) Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees.
-- **Hints**: O(N^2) => Swap  on each layer, starting from outermost and working inwards.
+   - **Hints**: O(N^2) => Swap  on each layer, starting from outermost and working inwards.
 
 - [Rotate Matrix](./chapter01/1_7_rotateMatrix.js) <br />
   - [String Compression](./src/chapter01ArraysAndStrings/StringCompression.java) <br />
