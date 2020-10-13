@@ -150,14 +150,16 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   #### Recursive Problems:
   - A number of linked list problems rely on recursion.
   - Note: recursive algorithms take at least O(n) space , which n is the depth of recursive call.
- 
+
+### Solution
+- [**2.1. Remove Duplicates**](./chapter02/2P1_removeDuplicates.js): Write code to remoe duplicates from unordered linked List. <br />
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
 - [ListNode](./src/chapter02LinkedList/ListNode.java) <br />
 - [Loop Detection](./src/chapter02LinkedList/LoopDetection.java) <br />
 - [Palindrome](./src/chapter02LinkedList/Palindrome.java) <br />
 - [Partition](./src/chapter02LinkedList/Partition.java) <br />
-- [Remove Duplicates](./src/chapter02LinkedList/RemoveDuplicates.java) <br />
+- [Remove Duplicates](./chapter02/2P1_removeDuplicates.js) <br />
 - [Return Kth To Last](./src/chapter02LinkedList/ReturnKthToLast.java) <br />
 - [Sum Lists](./src/chapter02LinkedList/SumLists.java) <br />
 
