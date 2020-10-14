@@ -152,7 +152,25 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - Note: recursive algorithms take at least O(n) space , which n is the depth of recursive call.
 
 ### Solution
-- [**2.1. Remove Duplicates**](./chapter02/2P1_removeDuplicates.js): Write code to remoe duplicates from unordered linked List. <br />
+- [**2.1. Remove Duplicates**](./chapter02/2P1_removeDuplicates.js): Write code to remoe duplicates from unordered linked List ? How would you solve this problem if a temporary buffer is not allowed <br />
+   - Method 1 (Time: O(n) - Space: Need a temporary buffer): In order to remove duplicates, we need to able to track duplicates => Using Hash Table
+   - Method 2 (Time: O(n^2) - Space: O(1)): we can iterate with two pointers: `current` which iterates through the linkedList & `runner` which checks all subsequent nodes for duplicates
+   ```JavaScript
+  let currentNode = llist.head;
+  
+  while(currentNode) {
+    let runner = currentNode;
+    while (runner.next) {
+      if (runner.next.value === currentNode.value) {
+         runner.next = runner.next.next;
+      } else {
+      runner = runner.next
+    }
+  currentNode = currentNode.next;
+  }
+}
+   
+   ```
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
 - [ListNode](./src/chapter02LinkedList/ListNode.java) <br />
