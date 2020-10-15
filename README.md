@@ -152,10 +152,10 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   - Note: recursive algorithms take at least O(n) space , which n is the depth of recursive call.
 
 ### Solution
-- [**2.1. Remove Duplicates**](./chapter02/2P1_removeDuplicates.js): Write code to remoe duplicates from unordered linked List ? How would you solve this problem if a temporary buffer is not allowed <br />
+- [**2.1. Remove Duplicates**](./chapter02/2P1_removeDuplicates.js): Write code to remove duplicates from unordered linked List ? How would you solve this problem if a temporary buffer is not allowed <br />
    - Solution 1 [Time: O(n) - Space: Need a temporary buffer]: In order to remove duplicates, we need to able to track duplicates => Using `Hash Table`
    - Solution 2 [Time: O(n^2) - Space: O(1)]: we can iterate with two pointers: `current` which iterates through the linkedList & `runner` which checks all subsequent nodes for duplicates
-   ```JavaScript
+```JavaScript
   let currentNode = llist.head;
   
   while(currentNode) {
@@ -169,8 +169,27 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
   currentNode = currentNode.next;
   }
 }
-   
-   ```
+```
+
+- [**2.2. Return Kth To Last**](./chapter02/2P02_returnKthElemFromLast.js): Implement an algorithm to find kth to last element of a singly linked list <br />
+   - Solution 1: kth to last element = (n - k) => Trivial Solution
+   - Solution 2: 2 Pointer Approach: 
+      - Move p1 pointer k steps in the linkedlist while p2 remains at head
+      - Once p1 reach kth postion, move both pointers at the same time
+         ```JavaScript
+           // p1 will start @ kth, p2 will start @ 0
+           // When p1 hits the end of the list = n - k
+           // p2 pointer will exit at kth node from the end
+           while (p1 !== null) {
+             p1 = p1.next;
+             p2 = p2.next;
+           }
+           return p2.value;
+         ```
+   - Solution 3: Recursive 
+      - This is to recurse through the linked list. When it hits the end, the method passes back a counter = 0. 
+      - Continue to recurse through the linked list with `head = head.next`, and `counter++`
+      - When `counter = k`, we have reach the kth to last element of the linked  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
 - [ListNode](./src/chapter02LinkedList/ListNode.java) <br />
@@ -178,7 +197,7 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
 - [Palindrome](./src/chapter02LinkedList/Palindrome.java) <br />
 - [Partition](./src/chapter02LinkedList/Partition.java) <br />
 - [Remove Duplicates](./chapter02/2P1_removeDuplicates.js) <br />
-- [Return Kth To Last](./src/chapter02LinkedList/ReturnKthToLast.java) <br />
+
 - [Sum Lists](./src/chapter02LinkedList/SumLists.java) <br />
 
 ### Stacks and Queues
