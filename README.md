@@ -188,7 +188,7 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
          ```
    - Solution 3: Recursive 
       - This is to recurse through the linked list. When it hits the end, the method passes back a counter = 0. 
-      - Continue to recurse through the linked list with `head = head.next`, and `counter++`
+      - Each parent call adds 1 to this counter.
       - When `counter = k`, we have reach the kth to last element of the linked  
 - [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
