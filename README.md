@@ -190,7 +190,12 @@ Ouput: True (Permutations: "taco cat", "atco cta", etc)
       - This is to recurse through the linked list. When it hits the end, the method passes back a counter = 0. 
       - Each parent call adds 1 to this counter.
       - When `counter = k`, we have reach the kth to last element of the linked  
-- [Delete Middle Node](./src/chapter02LinkedList/DeleteMiddleNode.java) <br />
+
+- [**2.3. Delete Middle Node**](./chapter02/2P03_deleteMiddleNode.js):  Implement an algo to delete a node in the middle of the singly linked list, given only access to this node. For ex: <br />
+   - Input: the node c from linked list a->b->c->d->e
+   - Output: a->b->d->e
+ 
+   - **Solution:** Since you are not given the access to the head of the list, the solution is to copy over the data of next node to the deleted node, then delete the next node.
 - [Intersection](./src/chapter02LinkedList/Intersection.java) <br />
 - [ListNode](./src/chapter02LinkedList/ListNode.java) <br />
 - [Loop Detection](./src/chapter02LinkedList/LoopDetection.java) <br />
