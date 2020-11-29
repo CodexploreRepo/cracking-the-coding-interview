@@ -3,7 +3,7 @@
 JavaScript solutions to problems in the book Cracking the Coding Interview(6th Edition). 
 
 ## Table of Contents
-* **[JavaScript FAQ](#javascript-faq)**
+* **[Big O](#big-)**
 * **[Data Structure Summary](#data-structure-summary)**
 * **[Arrays and Strings](#arrays-and-strings)**
     * Hash Tables
@@ -22,10 +22,33 @@ JavaScript solutions to problems in the book Cracking the Coding Interview(6th E
 * **[Sorting and Searching](#sorting-and-searching)**
 * **[Testing](#testing)**
 * **[Additional Review Problems](#additional-review-problems)**
+* **[JavaScript FAQ](#javascript-faq)**
 * **[Resources](#resources)**
 
-
-
+## Big O
+#### Recursive Runtimes:
+  - **# of elements get halved each time**: O(log N)
+  - **N calls per recursion**: O(branches ^ (depth))
+     - Below case, branches = 2, depth = n => O(2^n) 
+     ```Java
+     int f(int n){
+         if (n < = 0) {
+            return 1
+         }
+         return f(n-1) + f(n-1)
+     }
+     ```
+     - Below case, branches = 2, depth of Binary tree with N nodes= Log(N) => O(2^(log N)) = O(N) 
+     ```Java
+     int sum (Node node) {
+         if (node == null){
+            return 0;
+         }
+         return sum(node.left) + node.value + sum(node.right);
+     }
+     ```
+     
+ 
 ## Data Structure Summary
   | Data Structure   |      Pro      |  Cons |
   |:----------:|-------------|------|
